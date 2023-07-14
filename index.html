@@ -6,10 +6,15 @@
 
         <title>zara.index</title>
         <link rel="stylesheet" href="./css/zara.css" />
-        <link rel="stylesheet" href="https://lib.lgkonline.com/lgk-icons/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+        <script src="https://kit.fontawesome.com/4e267a8f2b.js" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
         <script defer src="./js/zara.js"></script>
     </head>
     <body>
@@ -19,14 +24,14 @@
                     <a href="#"><img src="./img/image 6.png" alt="home" /></a>
                 </div>
                 <button type="button" class="btn search-btn">
-                    <span class="icon-search"></span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
 
                 <div class="search-area">
-                    <span class="icon-search"></span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" class="search-input" placeholder="Search" />
                     <button type="button" class="btn close-btn" onclick="toggleSearch()">
-                        <span class="icon-close"></span>
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
                     </button>
                 </div>
             </div>
@@ -45,8 +50,81 @@
                 </ul>
             </div>
         </div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <section class="main-slider">
+            <div class="item image">
+                <span class="loading">Loading...</span>
+                <figure>
+                    <div
+                        class="slide-image slide-media"
+                        style="
+                            background-image: url('https://images.unsplash.com/photo-1617339847756-976edbc411e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTE4Mg&ixlib=rb-1.2.1&q=85');
+                        "
+                    >
+                        <img
+                            data-lazy="https://images.unsplash.com/photo-1617339847756-976edbc411e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTE4Mg&ixlib=rb-1.2.1&q=85"
+                            class="image-entity"
+                        />
+                    </div>
+                    <figcaption class="caption">Image</figcaption>
+                </figure>
+            </div>
+            <!-- <div class="item vimeo" data-video-start="4">
+                <iframe
+                    class="embed-player slide-media"
+                    src="https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=0&id=217885864"
+                    width="980"
+                    height="520"
+                    frameborder="0"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                ></iframe>
+                <p class="caption">Vimeo</p>
+            </div> -->
+
+            <div class="item youtube">
+                <iframe
+                    class="embed-player slide-media"
+                    width="980"
+                    height="520"
+                    src="https://www.youtube.com/embed/XqkIzDxcndk?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=XqkIzDxcndk&start=1"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+                <p class="caption">YouTube</p>
+            </div>
+            <div class="item youtube">
+                <iframe
+                    class="embed-player slide-media"
+                    width="980"
+                    height="520"
+                    src="https://www.youtube.com/embed/HvXWVmmdtbU?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=HvXWVmmdtbU&start=1"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+                <p class="caption">YouTube</p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
+                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
+                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
+                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
+                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
+                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
+                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat
+                    impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias
+                    incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat
+                    distinctio laudantium, corrupti eum unde.
+                </p>
+            </div>
+        </section>
     </body>
 </html>
