@@ -23,9 +23,18 @@ body {
     margin: auto;
     /* background-color: #2d3042; */
     position: relative;
-    color: #efefef;
+
     text-align: center;
     color: #000;
+}
+/* 스크롤바 숨기기 */
+body {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 
 body::before {
@@ -70,26 +79,33 @@ textarea {
 .search-btn {
     width: 14rem;
     position: absolute;
-    transform: translateY(-7px);
+    transform: translateY(-10px);
     left: 80%;
     margin-left: -7rem;
 }
 
 .close-btn {
     color: #fff;
+    position: absolute;
+    top: -24%;
+    left: 75%;
 }
 
 .search-area {
+    display: flex;
+    justify-content: center;
     font-size: var(--big-font);
-    padding: var(--control-padding);
+    /* padding: var(--control-padding); */
     background-color: #000;
     color: #fff;
     text-align: center;
+
     position: absolute;
     z-index: 4;
     top: -14rem;
     right: 0;
     left: 0;
+    height: 55px;
     transition: top 0.1s;
 }
 .search-in .search-area {
@@ -98,15 +114,21 @@ textarea {
 
 .search-input {
     background-color: transparent;
+    /* transform: translateX(12%); */
     border: none;
+    position: absolute;
+    left: 30%;
+    top: 20%;
     padding: 0;
     color: #fff;
+    font-size: 1.6rem;
 }
 
 *[class^='icon-'] {
     font-size: 1.6rem;
 }
 .gnb {
+    position: relative;
     display: flex;
     z-index: 5;
 }
@@ -123,6 +145,7 @@ textarea {
     width: 100px;
 }
 #menu__toggle {
+    display: none;
     opacity: 0;
 }
 #menu__toggle:checked + .menu__btn > span {
@@ -196,7 +219,7 @@ textarea {
 /* 비디오 슬라이드 */
 .main-slider {
     position: relative;
-    top: 40px;
+    top: 55px;
     width: 100%;
     height: 60vw;
     min-height: 8vw;
@@ -285,7 +308,7 @@ textarea {
     text-align: center;
     padding: 20px;
     border: 3px solid;
-    color: #fff;
+    color: #d8e707;
     margin: 0;
     font-size: 40px;
     font-weight: bold;
