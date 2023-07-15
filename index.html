@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
         <title>zara.index</title>
         <link rel="stylesheet" href="./css/zara.css" />
@@ -14,8 +14,9 @@
 
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
         <script defer src="./js/zara.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     </head>
     <body>
         <div class="gnb">
@@ -50,121 +51,115 @@
                 </ul>
             </div>
         </div>
-        <section class="main-slider">
-            <div class="item image">
-                <span class="loading">Loading...</span>
-                <figure>
-                    <div
-                        class="slide-image slide-media"
-                        style="
-                            background-image: url('https://images.unsplash.com/photo-1617339847756-976edbc411e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTE4Mg&ixlib=rb-1.2.1&q=85');
-                        "
-                    >
-                        <img
-                            data-lazy="https://images.unsplash.com/photo-1617339847756-976edbc411e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTE4Mg&ixlib=rb-1.2.1&q=85"
-                            class="image-entity"
-                        />
-                    </div>
-                    <figcaption class="caption">Image</figcaption>
-                </figure>
-            </div>
-            <!-- <div class="item vimeo" data-video-start="4">
-                <iframe
-                    class="embed-player slide-media"
-                    src="https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=0&id=217885864"
-                    width="980"
-                    height="520"
-                    frameborder="0"
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    allowfullscreen
-                ></iframe>
-                <p class="caption">Vimeo</p>
-            </div> -->
 
-            <div class="item youtube">
-                <iframe
-                    class="embed-player slide-media"
-                    width="980"
-                    height="520"
-                    src="https://www.youtube.com/embed/XqkIzDxcndk?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=XqkIzDxcndk&start=1"
-                    frameborder="0"
-                    allowfullscreen
-                ></iframe>
-                <p class="caption">YouTube</p>
-            </div>
-            <div class="item youtube">
-                <iframe
-                    class="embed-player slide-media"
-                    width="980"
-                    height="520"
-                    src="https://www.youtube.com/embed/HvXWVmmdtbU?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=HvXWVmmdtbU&start=1"
-                    frameborder="0"
-                    allowfullscreen
-                ></iframe>
-                <p class="caption">YouTube</p>
-            </div>
-        </section>
-        <section class="container">
-            <div class="content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
-                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
-                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
-                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
-                </p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="main-slider">
+                        <div class="item image">
+                            <span class="loading">Loading...</span>
+                            <figure>
+                                <div
+                                    class="slide-image slide-media"
+                                    style="
+                                        background-image: url('https://static.zara.net/photos//contents/mkt/spots/ss22-north-beauty-surreal-summer/layout-default//ss22-north-beauty-surreal-summer.layout-default.layout-1920-1c4364f8c52e1499fa8faa0d0ee1b8273e7ade15-CROP-0.748_0.jpg?ts=1671032244354&imwidth=1920&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTE4Mg&ixlib=rb-1.2.1&q=85');
+                                    "
+                                >
+                                    <img
+                                        data-lazy="https://images.unsplash.com/photo-1617339847756-976edbc411e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTE4Mg&ixlib=rb-1.2.1&q=85"
+                                        class="image-entity"
+                                    />
+                                </div>
+                                <figcaption class="caption">Image</figcaption>
+                            </figure>
+                        </div>
+                        <!-- <div class="item vimeo" data-video-start="4">
+                        <iframe
+                            class="embed-player slide-media"
+                            src="https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=0&id=217885864"
+                            width="980"
+                            height="520"
+                            frameborder="0"
+                            webkitallowfullscreen
+                            mozallowfullscreen
+                            allowfullscreen
+                        ></iframe>
+                        <p class="caption">Vimeo</p>
+                    </div> -->
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
-                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
-                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
-                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat
-                    impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias
-                    incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat
-                    distinctio laudantium, corrupti eum unde.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
-                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
-                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
-                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat
-                    impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias
-                    incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat
-                    distinctio laudantium, corrupti eum unde.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
-                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
-                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
-                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat
-                    impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias
-                    incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat
-                    distinctio laudantium, corrupti eum unde.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
-                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
-                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
-                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat
-                    impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias
-                    incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat
-                    distinctio laudantium, corrupti eum unde.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta
-                    cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque
-                    atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit!
-                    Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat
-                    impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias
-                    incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat
-                    distinctio laudantium, corrupti eum unde.
-                </p>
+                        <div class="item youtube">
+                            <iframe
+                                class="embed-player slide-media"
+                                width="980"
+                                height="520"
+                                src="https://www.youtube.com/embed/XqkIzDxcndk?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=XqkIzDxcndk&start=1"
+                                frameborder="0"
+                                allowfullscreen
+                            ></iframe>
+                            <p class="caption">YouTube</p>
+                        </div>
+                        <div class="item youtube">
+                            <iframe
+                                class="embed-player slide-media"
+                                width="980"
+                                height="520"
+                                src="https://www.youtube.com/embed/HvXWVmmdtbU?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=HvXWVmmdtbU&start=1"
+                                frameborder="0"
+                                allowfullscreen
+                            ></iframe>
+                            <p class="caption">YouTube</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="swiper-slide">
+                    <section class="container">
+                        <div class="content">
+                            <p></p>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem
+                                illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni
+                                delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio
+                                optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum
+                                unde.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="swiper-slide">
+                    <section class="container">
+                        <div class="content">
+                            <p></p>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem
+                                illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni
+                                delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio
+                                optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum
+                                unde.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="container">
+                        <div class="content">
+                            <p></p>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem
+                                illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni
+                                delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio
+                                optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum
+                                unde.
+                            </p>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+        </div>
     </body>
 </html>

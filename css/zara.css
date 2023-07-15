@@ -23,7 +23,7 @@ body {
     margin: auto;
     /* background-color: #2d3042; */
     position: relative;
-
+    height: 100%;
     text-align: center;
     color: #000;
 }
@@ -227,7 +227,7 @@ textarea {
     opacity: 0;
     visibility: hidden;
     transition: all 1.2s ease;
-    z-index: 0;
+    z-index: 2;
     /* overflow: hidden; */
 }
 .main-slider.slick-initialized {
@@ -238,7 +238,7 @@ textarea {
 .slick-slide {
     position: relative;
     height: 38vw;
-    z-index: -2;
+    z-index: 1;
 }
 .slick-slide::before {
     background-color: #000;
@@ -386,3 +386,26 @@ textarea {
         filter: blur(15px);
     }
 }
+/* 스와이퍼 */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 플로트 버튼 */
