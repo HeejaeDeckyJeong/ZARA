@@ -409,3 +409,22 @@ textarea {
     object-fit: cover;
 }
 /* 플로트 버튼 */
+
+#kakao_channel {
+    display: none;
+    position: fixed;
+    bottom: 87px;
+    right: 23px;
+    z-index: 9999;
+}
+
+@media (max-width: 768px) {
+    #kakao_channel {
+        bottom: 48px;
+        right: 18px;
+    }
+
+    #kakao_channel svg {
+        width: 48px;
+    }
+}

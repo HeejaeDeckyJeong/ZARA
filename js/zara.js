@@ -167,3 +167,24 @@ var swiper = new Swiper('.mySwiper', {
         clickable: true,
     },
 });
+const parentDiv = document.querySelector('.swiper-wrapper');
+const childDiv = document.querySelector('.kakaochat');
+
+// 다른 div 요소의 translate3d 값에 따라 변화를 감지하는 함수
+function checkTranslate3dValue() {
+    const computedStyle = getComputedStyle(parentDiv); // 부모 요소의 계산된 스타일 가져오기
+    const transformValue = computedStyle.transform; // transform 스타일 값 가져오기
+
+    // translate3d 값이 변했을 때, display 속성 변경
+    if (transformValue !== 'matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1)') {
+        childDiv.style.display = 'block';
+    } else {
+        childDiv.style.display = 'none';
+    }
+}
+
+// 변화를 감지하기 위해 resize 이벤트 리스너 등록
+window.addEventListener('resize', checkTranslate3dValue);
+
+// 초기에도 한 번 실행하여 초기 위치에 따라 display 속성 설정
+checkTranslate3dValue();
